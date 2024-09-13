@@ -1,10 +1,10 @@
 # ContactBookGit
 This is a starter kit for the first lab of the Software Engineering Course.
-Fork this project to make your own version of it.
 
-You will notice some things need to be updated in this code. It was originally made with Java 8 and JUnit 4. The plan is for you to still use JUnit 4, but you can and should use a more recent version, like Java 21. You may also note a few other redundant things (e.g. imports). Fix whatever you need to.
+This project consisted of improving the existing code and completing it with the missing functions, working as a team and being assigned to each member a specific task.
+The main goal of this mini-assignment was teamwork, so that everyone could use Git in the development of the application.
 
 Students:
-Mariana Batista n.º66025
-Linda Xiang n.º65720
+Mariana Batista n.º66025 |
+Linda Xiang n.º65720 |
 Gonçalo Farias n.º59204
