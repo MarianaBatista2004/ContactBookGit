@@ -92,6 +92,18 @@ public class ContactBook {
         currentContact = 0;
     }
 
+    public boolean repeatedContact(){
+        boolean repeated = false;
+        for(int i=0; i<= this.counter; i++) {
+            if (repeated) break;
+            for(int j=1; i<= this.counter; j++){
+                if(this.contacts[i].getPhone()==this.contacts[j].getPhone())
+                    repeated=true;
+            }
+        }
+        return repeated;
+    }
+
     public boolean hasNext() {
         return (currentContact >= 0 ) && (currentContact < counter);
     }
@@ -102,3 +114,5 @@ public class ContactBook {
     }
 
 }
+
+
