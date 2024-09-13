@@ -163,8 +163,8 @@ public class Main {
         int phone;
         phone = in.nextInt(); in.nextLine();
         String name = cBook.findContactByNumber(phone);
-        if(name != null) {
-            System.out.println(name + "" + phone);
+        if (name != null) {
+            System.out.println(name);
         }
         else System.out.println(NUMBER_NOT_EXIST);
     }
