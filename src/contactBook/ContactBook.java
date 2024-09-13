@@ -43,8 +43,10 @@ public class ContactBook {
     public String findContactByNumber(int number) {
         String contactName = null;
         for(int i=counter; i>0; i--)
-            if (contacts[i].getPhone()==number)
-                contactName= contacts[i].getName();
+            if (contacts[i].getPhone()==number) {
+                contactName = contacts[i].getName();
+                break;
+            }
         return contactName;
     }
 
