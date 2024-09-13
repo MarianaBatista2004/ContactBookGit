@@ -40,6 +40,14 @@ public class ContactBook {
         counter--;
     }
 
+    public String findContactByNumber(int number) {
+        String contactName = null;
+        for(int i=counter; i>0; i--)
+            if (contacts[i].getPhone()==number)
+                contactName= contacts[i].getName();
+        return contactName;
+    }
+
     //Pre: name != null && hasContact(name)
     public int getPhone(String name) {
         return contacts[searchIndex(name)].getPhone();
