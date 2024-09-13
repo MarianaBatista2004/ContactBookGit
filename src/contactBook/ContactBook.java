@@ -42,7 +42,7 @@ public class ContactBook {
 
     public String findContactByNumber(int number) {
         String contactName = null;
-        for(int i=counter; i>0; i--)
+        for(int i=0; i<counter; i++)
             if (contacts[i].getPhone()==number) {
                 contactName = contacts[i].getName();
                 break;
