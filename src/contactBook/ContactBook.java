@@ -96,9 +96,11 @@ public class ContactBook {
         boolean repeated = false;
         for(int i=0; i< this.counter-1; i++) {
             if (repeated) break;
-            for(int j=i+1; j < this.counter; j++){
-                if(this.contacts[i].getPhone()==this.contacts[j].getPhone())
-                    repeated=true;
+            for(int j=i+1; j < this.counter; j++) {
+                if (this.contacts[i].getPhone() == this.contacts[j].getPhone()) {
+                    repeated = true;
+                    break;
+                }
             }
         }
         return repeated;
